@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>List</title>
+  <link href="../css/css.css" rel="stylesheet" type="text/css">
+  <link href="animations.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="../css/css.css">
+  <script src="../bower_components/angular/angular.min.js"></script>
+  <script src="../bower_components/angular-animate/angular-animate.js"></script>
+  <script src="script.js"></script>
+</head>
+<header>
+  <div id="mainRibbon">
+    <a href="../about.html">About</a>
+    <a href="../index.html">Home</a>
+    <a href="../News.html">News</a>
+    <a href="index.html">List</a>
+    <!-- <a href="http://alexispgblog.wordpress.com">WordPress</a> -->
+    <a href="../Pages/Pages.html">Pages</a>
+    <a href="../Testing/index.html">Testing</a>
+  </div>
+</header>
+<body data-ng-app="ngRepeat">
+  <br><div data-ng-controller="repeatController" id="list-div">
+    <p id="list">Simple list of objects</p>
+    Select your object :
+    <input id="input-list" type="search" data-ng-model="q" placeholder="Type here" aria-label="filter friends" />
+      <div>
+        <br>
+      </div>
+      <ul class="example-animate-container" id="animate-container">
+      <li class="animate-repeat" data-ng-repeat="object in objects | filter:q as results">
+        [{{$index + 1}}] {{object.name}}
+      </li>
+      <li class="animate-repeat" data-ng-if="results.length == 0">
+        <strong>No results found...</strong>
+      </li>
+    </ul>
+  </div>
+</body><br>
+<div id="footer-div">
+  <footer id="footer">
+    <div id="copyright">
+      <p>@Copyright 2016 - Alexis Plassmann--Gobert</p>
+      <p>mailto: <a href="mailto:">apgobert@gmail.com</a></p>
+    </div>
+  </footer>
+</div>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="web, mobile, Infinity">
+    <meta name="description" content="Infinity website">
+    <meta name="author" content="Alexis Plassmann--Gobert">
+    <link rel="stylesheet" href="../css/css.css">
+    <link rel="stylesheet" href="../app/app.js">
+    <link property="stylesheet" href="../List/animations.css" type="text/css">
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-route/angular-route.js"></script>
+    <script src="../bower_components/angular-animate/angular-animate.js"></script>
+    <script src="../js/script.js"></script>
+    <title>Infinity</title>
+</head>
+<header>
+    <div id="mainRibbon">
+        <a href="../about.html">About</a>
+        <a href="../index.html">Home</a>
+        <a href="../News.html">News</a>
+        <a href="../List/index.html">List</a>
+        <a href="http://alexispgblog.wordpress.com">WordPress</a>
+    </div>
+</header>
+<body data-ng-app="ngViewExample">
+<br>
+<br>
+<div id="landing-div">
+    <iframe class="runnable-example-frame" src="index.html" name="iframeText">
+        <data-ng-app="ngAnimate" class="ng-scope">
+        <input id="setbtn1" type="button" value="Display" ng-click="myVar='myclass'">
+        <input id="clearbtn1" type="button" value="Reset" ng-click="myVar=''">
+        <br>
+        <span class="base-class">SampleText</span>
+        </body>
+    </iframe>
+    <iframe class="runnable-example-frame" src="index2.html" name="iframeText">
+        <body data-ng-app="ngAnimate" class="ng-scope">
+        <input id="setbtn2" type="button" value="Display" ng-click="myVar='myclass'">
+        <input id="clearbtn2" type="button" value="Reset" ng-click="myVar=''">
+        <br>
+        <span class="base-class">SampleText</span>
+        </body>
+    </iframe>
+    <iframe class="runnable-example-frame" src="index3.html" name="iframeText">
+        <body data-ng-app="ngAnimate" class="ng-scope">
+        <input id="setbtn3" type="button" value="Display" ng-click="myVar='myclass'">
+        <input id="clearbtn3" type="button" value="Reset" ng-click="myVar=''">
+        <br>
+        <span class="base-class">SampleText</span>
+        </body>
+    </iframe>
+</div>
+<br><br>
+<div data-ng-controller="MainCtrl as main" id="book">
+    Choose:
+    <!--<a href="Book/Page1">Page1</a>-->
+    <!--<a href="Book/Page2">Page2</a>-->
+    <!--<a href="Book/Page3">Page3</a>-->
+    <div data-class="view-animate-container">
+        <div ng-view class="view-animate"></div>
+    </div>
+    <hr />
+    <pre>$location.path() = {{main.$location.path()}}</pre>
+    <pre>$route.current.templateUrl = {{main.$route.current.templateUrl}}</pre>
+    <pre>$route.current.params = {{main.$route.current.params}}</pre>
+    <pre>$routeParams = {{main.$routeParams}}</pre>
+</div>
+<br>
+<div id="basic-div">
+    <div id="mainDiv2">
+        <br>
+        <div id="vienne">
+            <img src="http://www.lalettredumusicien.fr/imgfck/1/Image/NEWS_2013/Vienne_Staatsoper.jpg" width="800" height="300">
+        </div><br>
+        <div id="ny">
+            <img src="https://www.cnewyork.net/wp-content/uploads/2014/10/manhattan-407703_1280.jpg" width="800" height="300">
+        </div><br>
+        <div id="tk">
+            <img src="http://www.international.gouv.qc.ca/Content/Users/Documents/FicheContenu/81.jpg" width="800" height="300">
+        </div>
+    </div>
+    <div id="mainDiv3">
+        <p id="loremIpsum">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu orci nec quam dictum hendrerit a quis risus. Proin eu fermentum justo. In porttitor sapien vel maximus scelerisque. Pellentesque sollicitudin sagittis diam et scelerisque. Aenean non ante ultricies, elementum risus eget, varius nisi. Donec ac mi in eros condimentum sollicitudin. Fusce nec ex id sapien luctus rhoncus. Sed at nibh fermentum, feugiat tortor et, rhoncus nisl. Ut malesuada dui vitae dolor laoreet, scelerisque imperdiet diam dictum. Quisque et arcu neque.
+        </p>
+        <div data-ng-app="newApp">
+        </div>
+    </div>
+</div>
+</body>
+<br>
+<div id="footer-div">
+    <footer id="footer">
+        <div id="copyright">
+            <p>@Copyright 2016 - Alexis Plassmann--Gobert</p>
+            <p>mailto: <a href="mailto:">apgobert@gmail.com</a></p>
+        </div>
+    </footer>
+</div>
