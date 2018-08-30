@@ -6,6 +6,6 @@ angular.module('scopeExample', [])
     $rootScope.department = 'Lyon';
   }])
   .controller('ListController', ['$scope', function($scope) {
-    $scope.names = ['Toto', 'Titi', 'Tata'];
+    $scope.names = ['Test1', 'Test2', 'Test3'];
   }]);
 })(window.angular);

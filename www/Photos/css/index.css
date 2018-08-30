@@ -1,0 +1,26 @@
+header {
+    text-align: center;
+	background-color: white;
+    font-size: 21px;
+    margin: 0 auto;
+}
+
+#mainRibbon {
+	display: inline-block;
+	margin: 0 auto;
+}
+
+body {
+	text-align: center;
+	background-color: rgb(33, 53, 64);
+	font-size: 20px;
+	color: white;
+	display: inline-block;
+}
+
+div {
+	display: -moz-inline-box; /* Firefox 2 */
+	display: table; /* All */
+	zoom: 1; /* IE6/7 */
+	*display: inline; /* IE magic */
+}

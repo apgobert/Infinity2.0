@@ -16,7 +16,8 @@
     <a href="../index.html">Home</a>
     <a href="../News.html">News</a>
     <a href="index.html">List</a>
-    <!-- <a href="http://alexispgblog.wordpress.com">WordPress</a> -->
+    <a href="../Photos/index.html">Photos</a>
+    <a href="https://itnewsdelasemaine.wordpress.com/">WordPress</a>
     <a href="../Pages/Pages.html">Pages</a>
     <a href="../Testing/index.html">Testing</a>
   </div>
@@ -31,7 +32,7 @@
       </div>
       <ul class="example-animate-container" id="animate-container">
       <li class="animate-repeat" data-ng-repeat="object in objects | filter:q as results">
-        [{{$index + 1}}] {{object.name}}
+        [{{$index + 1}}] {{object.name}} <img data-ng-src="{{object.img}}"/>
       </li>
       <li class="animate-repeat" data-ng-if="results.length == 0">
         <strong>No results found...</strong>
