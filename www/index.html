@@ -7,10 +7,24 @@
     <link rel="stylesheet" href="css/css.css">
     <link property="stylesheet" href="List/animations.css" type="text/css">
     <link rel="stylesheet" href="app/app.js">
+    <link rel="stylesheet" href="css/about.css">
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="js/script.js"></script>
+   	<script type="text/javascript" src="//code.jquery.com/jquery-latest.js"></script>
+   	
+   	
+   <!-- <script>
+    	alert("0");
+    	$(document).ready(function(){
+    		$('#btn').click(function(){
+    		alert("1");
+    		$('#includeContent').load('about.html');
+    		}
+    	});
+    </script> -->
+    
     <title>Infinity</title>
 </head>
 <header>
@@ -93,11 +107,23 @@
 </div>
 </body>
 <br>
-<div id="footer-div">
-    <footer id="footer">
-        <div id="copyright">
-            <p>@Copyright 2016 - Alexis Plassmann--Gobert</p>
+<div id="socialnetworks-div">
+	<ul class="social-network-links">
+    	<div id="copyright">
+        	<p>@Copyright 2016 - Alexis Plassmann--Gobert</p>
             <p>mailto: <a href="mailto:">apgobert@gmail.com</a></p>
         </div>
-    </footer>
+         <span class="marge"><a target="_blank" href="https://www.facebook.com/alexis.plassmann?lst=1570506828%3A1570506828%3A1535619753"><img src="../img/logos/fb.png" title="Trouvez moi sur Facebook" width="30" height="30"></a></span>
+         <span class="marge"><a target="_blank" href="https://twitter.com/APlassGo"><img src="../img/logos/tw.png" title="Trouvez moi sur Twitter" width="30" height="30"></a></span>
+         <span class="marge"><a target="_blank" href="https://plus.google.com/u/0/+AlexisPlassmannGobert"><img src="../img/logos/g+.jpg"  title="Trouvez moi sur Google+" width="30" height="30"></a></span>
+         <span class="marge"><a target="_blank" href="https://www.pinterest.fr/apgobert/"><img src="../img/logos/pinterest.png" title="Trouvez moi sur Pinterest" width="30" height="30"></a></span>
+         <span class="marge"><a target="_blank" href="https://www.instagram.com/apgobert/"><img src="../img/logos/instagram.png" title="Trouvez moi sur Instagram" width="30" height="30"></a></span>
+         <span class="marge"><a target="_blank" href="https://github.com/apgobert"><img src="../img/logos/gh.png"  title="Trouvez moi sur GitHub" width="30" height="30"></a></span>
+    </ul>
 </div>
+<!-- jQuery fonctionne  --><!-- 
+<script>
+	alert("2");
+</script> -->
+<!-- inclure about.html fonctionne pas -->
+<!-- <div id="includeContent"></div> -->
