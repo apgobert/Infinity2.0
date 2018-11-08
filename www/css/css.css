@@ -273,3 +273,42 @@ footer {
     border-top: 3px solid slategrey;
     padding-bottom: 3px;
 }
+
+/*
+
+Test de bouton qui ne marche pas.
+
+ .bouton {
+	background - color: #008000!important;
+    border - radius: 100 % ;
+    box - shadow: 0 6 px 10 px rgba(0, 0, 0, .23);
+    color: #fff;
+    font - size: 24 px;
+    font - weight: 700;
+    height: 56 px;
+    line - height: 1;
+    margin - top: 40 px;
+    padding: 16 px;
+    transition: box - shadow .4 s;
+    width: 56 px
+}
+
+}.btn.btn - circle - red {
+    -webkit - transition: box - shadow .4 s;
+    background - color: #F44336!important;
+    border - radius: 100 % ;
+    box - shadow: 0 6 px 10 px rgba(0, 0, 0, .23);
+    color: #fff;
+    font - size: 24 px;
+    font - weight: 700;
+    height: 56 px;
+    line - height: 1;
+    margin - top: 40 px;
+    padding: 16 px;
+    transition: box - shadow .4 s;
+    width: 56 px
+}
+
+.btn.btn - circle - red: hover {
+    box - shadow: 0 6 px 10 px rgba(0, 0, 0, .23), 0 10 px 30 px rgba(0, 0, 0, .19)
+} */
